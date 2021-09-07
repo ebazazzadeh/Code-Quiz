@@ -1,0 +1,121 @@
+:root {
+    --primary: #659DBD;
+    --secondary: #BFE8FD;
+    --dark: #02293C ; 
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width : 100vw;
+    height : 110vh;
+    justify-content : center;
+    align-items : center;
+ 
+}
+ #wrapper{   
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px 2px;
+
+}
+ 
+#questionsDiv {
+    margin: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#currentTime {
+    float: right;
+    font-weight: bold;
+}
+
+    
+.btn {
+    border: 1px solid var(--dark);
+    background-color: var(--primary);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color:white;
+    outline: none;
+    display: inline-flex;
+    justify-content:center;
+    margin-left: auto;
+    margin-right:auto; 
+}
+
+.btn:hover {
+    border-color: black;
+    cursor: pointer;
+}
+
+.divline{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+}
+
+
+label {
+    margin-right: 10px;
+}
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid lightgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    background-color: var(--secondary);
+    margin-top: 10px;
+    padding: 5px 15px;
+    width: 80%;
+    font-size: 14px;
+    color: var(--dark);
+}
+
+#createDiv {
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}
+
+
+@media screen and (max-width: 992px) {
+    #wrapper{
+        max-width: 992px;
+        display: block;
+        font-size: 12px;
+    }
+} 
+/*Responsive for the page*/
+@media screen and (max-width: 786px) {
+    
+    #wrapper{
+        max-width: 786px;
+        width: 100%;
+        display: block;
+        font-size: 11px;
+        
+    }
+}
+
+
+/*Responsive for the page*/
+@media screen and (max-width: 576px) {
+    #wrapper{
+        max-width: 576px;
+        width: 100%;
+        display: block;
+        font-size: 9px;
+        
+    }
+}
